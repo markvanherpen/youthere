@@ -1,0 +1,31 @@
+{
+  "id": "nl.markvanherpen.youthere",
+  "name": {
+    "en": "You there?",
+    "nl": "Jij daar?"
+  },
+  "description" : {
+    "en": "Simple application to check if Homey responds",
+    "nl": "Simpele applicatie om te controleren of Homey reageert"
+  },
+  "version": "0.0.1",
+  "compatibility": "0.x || 1.x",
+  "author": {
+    "name": "Mark van Herpen",
+    "email": "mark@v-herpen.nl"
+  },
+  "permissions" : [
+    "homey:manager:speech-input",
+    "homey:manager:speech-output"
+  ],
+  "speech" : [
+    {
+      "id" : "youthere",
+      "importance" : 0.8,
+      "triggers" : {
+        "en" : [ "are you there", "are you their", "you there", "you their" ],
+        "nl" : [ "ben je daar", "ben jij daar", "en jij daar", "en je daar", "jij daar", "je daar" ]
+      }
+    }
+  ]
+}
